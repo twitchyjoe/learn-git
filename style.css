@@ -1,21 +1,117 @@
 
 
-.yellow.bg {
-  margin: auto;
+.topGap {
+  padding-top: 5em;
+
+}
+
+.sButton {
+  display: flex;
   align-content: center;
-  background-color: beige;
-  min-width: fit-content;
-  max-width: 50%;
+  align-items: center;
+  height: 2.5em;
+  border: 3px solid rgb(82, 82, 82);
+  margin: auto;
+  margin-top: 3em;
   
 }
 
+.uTubeVid1 {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  background-color: rgba(31, 31, 31, 0.233);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landingDiv1 {
+  background-image: url("/Content/MountDark1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.yellow.bg {
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  background-color: rgba(31, 31, 31, 0.041);
+  min-width: fit-content;
+  max-width: fit-content;
+  position: relative;
+}
+
+.section2 {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: rgba(31, 31, 31, 0.041);
+  position: relative;
+  text-align: center;
+  align-content: center;
+}
+
+.section3 {
+  
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: rgba(31, 31, 31, 0.041);
+  position: relative;
+  text-align: center;
+  align-content: center;
+
+}
+
+
 h1 {
   color: black;
-  font-size: 2em;
-  margin: auto;
+  font-size: 3.5em;
+  margin-left: auto;
+  margin-right: auto;
   width: 10em;
-  border: 3px solid green;
   padding: 10px;
   text-align: center;
 }
 
+
+h2 {
+  color: black;
+  font-size: 4.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  padding-top: 10px;
+  text-align: center;
+}
+
+p {
+
+  color: black;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25em;
+  padding: 10px;
+  text-align: left;
+}
+
+.p1 {
+
+  color: black;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2em;
+  width: 25em;
+  padding: 10px;
+  text-align: left;
+}
