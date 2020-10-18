@@ -1,0 +1,21 @@
+
+
+.yellow.bg {
+  margin: auto;
+  align-content: center;
+  background-color: beige;
+  min-width: fit-content;
+  max-width: 50%;
+  
+}
+
+h1 {
+  color: black;
+  font-size: 2em;
+  margin: auto;
+  width: 10em;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
