@@ -1,7 +1,141 @@
 
 
+@font-face {
+  font-family: robotoST;
+  src: url(Content/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: robotoThin;
+  src: url(Content/Roboto/Roboto-Thin.ttf);
+}
+
+
+.wrapper {
+
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  border: none !important;
+  font-family: robotoThin;
+}
+
+
+
+
+header {
+
+  background-color: rgba(147, 196, 218, 0.164);
+  height: 10em;
+  position: relative;
+  z-index: 2;
+  margin-top: -2em;
+}
+
+body {
+  margin:0; /* Remove body margins */
+}
+
+
+.LogoWrapper {
+  background-color: rgb(19, 92, 161);
+  padding-left: 1.3em;
+  padding-top: 1.8em;
+  margin-top: 4em;
+  margin-left: 20%;
+  width: 10em;
+  height: 8em;
+  position: absolute;
+  
+}
+
+nav {
+
+  background-color: rgba(19, 92, 161, 0);
+  height: 5em;
+  z-index: 6;
+  margin-top: -6em;
+  position: relative;
+
+}
+
+.navconts1 {
+
+  background-color: rgb(19, 92, 161);
+  width: 5em;
+  height: 3em;
+  position: absolute;
+  z-index: 17;
+  margin-top: 1em;
+  margin-right: 30%;
+  right: 0;
+  padding-bottom: 0em;
+  
+}
+
+.navconts2 {
+
+  background-color: rgb(19, 92, 161);
+  width: 5em;
+  height: 3em;
+  position: absolute;
+  z-index: 17;
+  margin-top: 1em;
+  margin-right: 25%;
+  right: 0;
+  
+}
+
+.navconts3 {
+
+  background-color: rgb(19, 92, 161);
+  width: 5em;
+  height: 3em;
+  position: absolute;
+  z-index: 17;
+  margin-top: 1em;
+  margin-right: 20%;
+  right: 0;
+  
+}
+
+main {
+
+  background-color: rgba(130, 223, 161, 0.212);
+  height: fit-content;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  margin-top: 0em;
+  padding-top: 0em;
+
+}
+
+footer {
+
+  background-color: rgba(170, 130, 223, 0.527);
+  height: 10em;
+  position: relative;
+  z-index: 4;
+  
+
+}
+
+article {
+
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+section {
+  background-color: rgba(0, 128, 128, 0.082);
+  width: 25em;
+  margin: auto;
+}
+
 .topGap {
-  padding-top: 5em;
+  padding-top: 0em;
 
 }
 
@@ -15,14 +149,16 @@
   margin-top: 3em;
   
 }
-
 .uTubeVid1 {
-  width: 70%;
-  height: 70%;
+  width: 50em;
+  height: fit-content;
   position: relative;
-  background-color: rgba(31, 31, 31, 0.233);
+  background-color: rgba(31, 31, 31, 0);
   margin-left: auto;
   margin-right: auto;
+  padding: 0em;
+  padding-top: 1em;
+  padding-bottom: 0em;
 }
 
 .landingDiv1 {
@@ -30,22 +166,26 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: relative;
+  margin-top: -7em;
+  padding-top: 15em;
+  padding-bottom: 3em;
 }
 
-.yellow.bg {
+.welcome-text{
   margin-left: auto;
   margin-right: auto;
-  align-content: center;
-  background-color: rgba(31, 31, 31, 0.041);
+  background-color: rgba(255, 255, 255, 0);
   min-width: fit-content;
   max-width: fit-content;
   position: relative;
+  margin-top: -2em;
+  padding-top: 0em;
+  z-index: 12;
 }
 
-.section2 {
+.Convienence {
   margin-top: 5em;
   margin-bottom: 5em;
   padding-top: 3em;
@@ -54,9 +194,25 @@
   position: relative;
   text-align: center;
   align-content: center;
+  margin: auto;
+  
 }
 
-.section3 {
+.Tailored {
+  
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: rgba(219, 219, 219, 0.068);
+  position: relative;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+
+}
+
+.Pricing {
   
   margin-top: 5em;
   margin-bottom: 5em;
@@ -66,16 +222,15 @@
   position: relative;
   text-align: center;
   align-content: center;
+  margin: auto;
 
 }
 
-
 h1 {
-  color: black;
-  font-size: 3.5em;
+  color: rgb(255, 255, 255);
+  font-size: 4.0em;
   margin-left: auto;
   margin-right: auto;
-  width: 10em;
   padding: 10px;
   text-align: center;
 }
@@ -83,12 +238,20 @@ h1 {
 
 h2 {
   color: black;
-  font-size: 4.5em;
+  font-size: 3.5em;
   margin-left: auto;
   margin-right: auto;
-  width: 10em;
   padding-top: 10px;
   text-align: center;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
 }
 
 p {
@@ -98,7 +261,6 @@ p {
   line-height: 1.3em;
   margin-left: auto;
   margin-right: auto;
-  width: 25em;
   padding: 10px;
   text-align: left;
 }
@@ -111,7 +273,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: -2em;
-  width: 25em;
   padding: 10px;
   text-align: left;
 }
