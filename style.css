@@ -171,9 +171,10 @@ section {
   background-color: rgba(31, 31, 31, 0);
   margin-left: auto;
   margin-right: auto;
-  padding: 0em;
-  padding-top: 1em;
+  padding: 0.2em;
+  padding-top: 0.2em;
   padding-bottom: 0em;
+  z-index: 10;
 }
 
 .landingDiv1 {
@@ -183,9 +184,9 @@ section {
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
-  margin-top: -7em;
+  margin-top: -9em;
   padding-top: 15em;
-  padding-bottom: 3em;
+  padding-bottom: 5.5em;
 }
 
 .welcome-text{
@@ -302,3 +303,157 @@ p {
   padding: 10px;
   text-align: left;
 }
+
+
+
+/* Button stuff */
+
+:root {
+  --base-color: rgba(255, 255, 255, 1);
+  --hover-color: rgb(130, 186, 238);
+}
+
+.horizontalB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 6em;
+  height: 2em;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid var(--base-color);
+  font-size: 3rem;
+  cursor: pointer;
+  font-family: robotoST;
+}
+.horizontalB > .text {
+  position: relative;
+  color: transparent;
+  background-image: linear-gradient(90deg, var(--hover-color) 0%, var(--hover-color) 50%, var(--base-color) 50%, var(--base-color) 100%);
+  background-repeat: repeat;
+  background-size: 200%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-position 300ms;
+  
+}
+.horizontalB::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--base-color);
+  transform-origin: 100% 0;
+  transform: scale3d(0, 1, 1);
+  transition: transform 300ms;
+}
+.horizontalB:hover .text {
+  background-position: 0 0;
+}
+.horizontalB:hover::before {
+  transform-origin: 0 0;
+  transform: scale3d(1, 1, 1);
+}
+.verticalB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 5.5em;
+  height: 2em;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1.5em;
+  border: 5px solid var(--base-color);
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-family: robotoST;
+  z-index: 5;
+}
+.verticalB > .text {
+  position: relative;
+  color: transparent;
+  background-image: linear-gradient(0deg, var(--hover-color) 0%, var(--hover-color) 50%, var(--base-color) 50%, var(--base-color) 100%);
+  background-repeat: repeat;
+  background-size: 100% 200%;
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-position 300ms;
+  z-index: 5;
+}
+.verticalB::before {
+  content: '';
+  position: absolute;
+  top: -10;
+  left: 10;
+  width: 103%;
+  height: 103%;
+  background: var(--base-color);
+  transform-origin: 0 0;
+  transform: scale3d(1, 0, 1);
+  transition: transform 300ms;
+  z-index: 5;
+}
+.verticalB:hover .text {
+  background-position: 0 100%;
+  z-index: 5;
+}
+.verticalB:hover::before {
+  transform-origin: 0 100%;
+  transform: scale3d(1, 1, 1);
+  z-index: 5;
+}
+
+
+/*Animated Border*/
+
+.block {
+	/*position: relative;*/
+  /*margin: 300px auto 0;*/
+  /*margin-top: -10em;*/
+	/*width: 500px;*/
+	/*height: 250px;*/
+  /*background: linear-gradient(0deg, #000, #272727);*/
+  z-index: 1;
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fafafa, #a3a3a3, #657377,#3f585f, #435b75, rgb(66, 93, 121), 
+		rgb(170, 196, 221), rgb(159, 175, 190),rgb(191, 208, 224), #a3a3a3);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 60s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(30px);
+}
+
+/*End Gradient*/
+
+
