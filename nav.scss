@@ -4,9 +4,22 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: robotoST;
+  src: url(Content/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: robotoThin;
+  src: url(Content/Roboto/Roboto-Thin.ttf);
+}
+
+
+
+
+
 // Breakpoints
 $breakpoints:(
-xs: 0,
+xs: 300px,
 sm:576px,
 md:768px,
 lg:992px,
@@ -59,7 +72,8 @@ $text-color: rgb(255, 255, 255);
 // LINKS RESET
 a {
   text-decoration: none;
-  font-family: robotoST;
+  font-family: robotoThin;
+  font-weight: 100;
   color: rgba(255, 255, 255, 0.8);
   &:hover, :focus {
     color: darken(rgb(255, 255, 255), 20%);
@@ -67,11 +81,11 @@ a {
 }
 // LINKS IN MENU EFFECT
 .menu-left a {
-  display: inline-block;
+  display: block;
   position: relative;
-  padding-bottom: 0px;
   transition: color .35s ease;
   
+  // Lines moving on hover
   &:before {
     content: '';
     display:block;
@@ -82,6 +96,7 @@ a {
     width: 0;
     transition: width 0s ease, background .35s ease;
   }
+  // Lines moving on hover release
   &:after {
     content: '';
     display: block;
@@ -94,12 +109,13 @@ a {
     transition: width .35s ease;
   }
   &:hover:before {
-    width: 100%;
+    width: 101%;
     background: $text-color;
     transition: width .35s ease;
   }
   &:hover:after {
-    width: 100%;
+    width: 101%;
+    
     background: transparent;
     transition: all 0s ease;
   }
@@ -107,10 +123,12 @@ a {
 
 header {
   position: fixed;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
   padding: 5px;
+  padding-top: 0px;
   background: rgba(0, 0, 0, 0.92);
   z-index: 3;
   will-change: transform;
@@ -125,11 +143,12 @@ header {
     .logo {
       float: left;
       padding-top: .25rem;
-      padding-bottom: .25rem;
+      padding-bottom: 0rem;
       margin-right: 1rem;
       font-size: 1.25rem;
       line-height: inherit;
       font-weight: 0;
+      margin-bottom: -0.25em;
       color: rgb(255, 255, 255);
       &:after {
         content: '';
@@ -207,6 +226,7 @@ ul.menu-left {
   float: right;
   height: 38px;
   width: 38px;
+  margin-top: 0.5em; //Burger Margin from top of nav
   cursor: pointer;
   padding: 8px 8px;
   &.open span:first-child {
@@ -225,9 +245,9 @@ ul.menu-left {
   span {
     position: relative;
     display: block;
-    height: 2px;
+    height: 2px; // X box lines thickness
     width: 100%;
-    margin-top: 4px;
+    margin-top: 6px;
     background-color: $text-color;
     transition: all .25s;
   }

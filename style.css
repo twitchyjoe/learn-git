@@ -36,6 +36,8 @@ main {
   margin: auto;
   margin-top: 0em;
   padding-top: 0em;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -60,9 +62,16 @@ article {
 
 section {
   background-color: rgba(0, 128, 128, 0.082);
-  width: 25em;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+section .Paragraphs {
+display: inline-block;
+width: 25em;
+
+}
+
 
 .topGap {
   padding-top: 0em;
@@ -105,6 +114,7 @@ section {
   margin-top: -7em;
   padding-top: 15em;
   padding-bottom: 2em;
+  
 }
 
 .welcome-text{
@@ -190,13 +200,27 @@ h3 {
 }
 
 h4 {
+  font-family: robotoThin;
   color: rgb(255, 255, 255);
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  line-height: 0.5em;
-  
+  line-height: 0em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+h5 {
+  font-family: robotoThin;
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 0em;
+  font-weight: bold;
+  margin-bottom: 0.25em;
 }
 
 p {
@@ -374,86 +398,4 @@ p {
 
 /*End Gradient*/
 
-.scrollDown {
-  padding-top: 1.5em;
-}
 
-.scrollDown a {
-  padding-top: 60px;
-}
-.scrollDown a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-.scrollDown a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: sdb10 2s infinite;
-  animation: sdb10 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb10 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-
-
-#scrollSec{
-  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
-  animation: 3s ease 0s normal forwards 1 fadein;
-}
-
-@keyframes fadein{
-  0% { opacity:0; }
-  66% { opacity:0; }
-  100% { opacity:1; }
-}
-
-@-webkit-keyframes fadein{
-  0% { opacity:0; }
-  66% { opacity:0; }
-  100% { opacity:1; }
-}
