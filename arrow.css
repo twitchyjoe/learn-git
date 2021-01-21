@@ -10,6 +10,7 @@ section:nth-child(odd) {
 .mousebox {
   
     display: block;
+    margin-top: 4em;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;

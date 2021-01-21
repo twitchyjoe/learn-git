@@ -72,6 +72,41 @@ width: 25em;
 
 }
 
+section .toDo {
+
+padding-left: 2em;
+padding-right: 2em;
+height: 30em;
+
+}
+
+.Curriculum .column {
+  float: left;
+  width: 50%;
+  padding-top: 3em;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Curriculum .left {
+  width: 65%;
+  padding-top: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.Curriculum .right {
+  width: 35%;
+}
+
+
 
 .topGap {
   padding-top: 0em;
@@ -142,6 +177,32 @@ width: 25em;
   
 }
 
+.Curriculum {
+  height: 28em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  background-color: rgba(31, 31, 31, 0.041);
+  position: relative;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+  
+}
+.Curriculum .sButton {
+  
+  display: block;
+  align-content: center;
+  align-items: center;
+  height: 2.5em;
+  border: 3px solid rgb(82, 82, 82);
+  margin: auto;
+  margin-top: 3em;
+    
+  
+}
+
 .Tailored {
   
   margin-top: 5em;
@@ -188,6 +249,37 @@ h2 {
   padding-top: 10px;
   text-align: center;
 }
+
+.Curriculum h2 {
+  
+    color: rgb(12, 12, 12);
+    font-size: 3em;
+    margin-left: 0em;
+    margin-right: 1em;
+    padding-top: 10px;
+    padding-bottom: 0em;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    text-align: center;
+
+  
+}
+
+.Curriculum p {
+  
+  color: rgb(12, 12, 12);
+  font-size: 1.2em;
+  margin-left: 0em;
+  margin-right: 1em;
+  padding-top: 10px;
+  padding-bottom: 0em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+
+
+}
+
 
 h3 {
   color: rgb(255, 255, 255);
