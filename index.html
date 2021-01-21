@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="ToDoList1.css">
+  <link rel="stylesheet" href="pricingTable.css">
 
 
 
@@ -130,7 +131,7 @@
     
                
               
-            <section class="toDo">
+            <section class="toDo row">
               
               <div class="column left"><h2>Customized Cirriculum</h2><p>With a well laid out cirriculum, its easy to track your progress and work towards your goals. Each student will have a cirriculum planned out just for them that focuses on learning to play piano fast!</p><button class="sButton">Get started</button>
               </div>
@@ -189,16 +190,64 @@
   
       <article>
         <section id="PriceSec">
-          <div class ="Pricing">
-            <h2>Pricing</h2>
-            
-            <section class="Paragraphs">
-            <p class="p1">Students can sign up on a month to month basis. Payment awards credits for each week in the month. One 30 minute lesson is one credit.</p>
-            </section>
+          <div class="backgroundPrice">
+            <div class ="Pricing row">
               
-            <button class="sButton">Get started</button>
-            
-          </div>
+              
+              <div class="column left">
+                
+                <div class="container">
+                  <div class="panel pricing-table">
+                    
+                    <div class="pricing-plan">
+                      <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+                      <h2 class="pricing-header">Personal</h2>
+                      <ul class="pricing-features">
+                        <li class="pricing-features-item">Custom domains</li>
+                        <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                      </ul>
+                      <span class="pricing-price">Free</span>
+                      <a href="#/" class="pricing-button">Sign up</a>
+                    </div>
+                    
+                    <div class="pricing-plan">
+                      <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
+                      <h2 class="pricing-header">Small team</h2>
+                      <ul class="pricing-features">
+                        <li class="pricing-features-item">Never sleeps</li>
+                        <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                      </ul>
+                      <span class="pricing-price">$150</span>
+                      <a href="#/" class="pricing-button is-featured">Free trial</a>
+                    </div>
+                    
+                    <div class="pricing-plan">
+                      <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
+                      <h2 class="pricing-header">Enterprise</h2>
+                      <ul class="pricing-features">
+                        <li class="pricing-features-item">Dedicated</li>
+                        <li class="pricing-features-item">Simple horizontal scalability</li>
+                      </ul>
+                      <span class="pricing-price">$400</span>
+                      <a href="#/" class="pricing-button">Free trial</a>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              
+              <div class="column right"> 
+                <h2>Pricing</h2>
+              
+                <section class="Paragraphs">
+                <p class="p1">Students can sign up on a month to month basis. Payment awards credits for each week in the month. One 30 minute lesson is one credit.</p>
+                </section>
+              </div>  
+              <button class="sButton">Get started</button>
+              
+            </div>
+          </div>  
         </section>
       </article>
   

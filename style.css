@@ -87,7 +87,6 @@ height: 30em;
 }
 
 
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -219,8 +218,8 @@ height: 30em;
 
 .Pricing {
   
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 0em;
+  margin-bottom: 0em;
   padding-top: 3em;
   padding-bottom: 4em;
   background-color: rgba(31, 31, 31, 0.041);
@@ -228,8 +227,68 @@ height: 30em;
   text-align: center;
   align-content: center;
   margin: auto;
+  margin-left: 0em;
+  margin-right: 0em;
+  height: 50em;
+  z-index: 3;
+  
 
 }
+
+.backgroundPrice {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.backgroundPrice::after {
+  content: '';
+  background: #60a9ff;
+  background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+  background: -webkit-linear-gradient(top, #60a9ff 0%,#4394f4 100%);
+  background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.Pricing .column {
+  float: left;
+  width: 50%;
+  padding-top: 3em;
+  z-index: 3;
+}
+.Pricing .left {
+  width: 65%;
+  margin-right: 0em;
+  padding-right: 0em;
+  padding-left: 3em;
+}
+.Pricing .right {
+  width: 35%;
+  padding-top: 5em;
+  padding-left: 0em;
+  padding-right: 0em;
+  z-index: 2;
+}
+
+
+
+
+
+.Pricing h2 {
+  font-size: 4em;
+  z-index: 3;
+}
+.Pricing p {
+  font-size: 1.2em;
+  z-index: 3;
+}
+
 
 h1 {
   color: rgb(255, 255, 255);
