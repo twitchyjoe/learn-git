@@ -253,3 +253,44 @@ ul.menu-left {
   }
 }
 
+
+
+
+
+
+.btn2 {
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  background-color: $primary;
+  border: 2px solid $primary;
+  cursor: pointer;
+  width: max-content;
+  transition: 0.25s ease;
+
+  &-1:hover {
+    border-style: dashed;
+  }
+  &-2:hover {
+    border-radius: 25px;
+  }
+  &-3:hover {
+    color: $primary;
+    background-color: transparent;
+  }
+  &-4:hover {
+    box-shadow: 0 6px 18px 0 rgba(#000, 0.1);
+    color: $primary;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  &-5:hover {
+    box-shadow: 0 6px 18px 0 rgba(#000, 0.1);
+    transform: translateY(-6px);
+  }
+  &--transparent {
+    color: $primary;
+    background-color: transparent;
+  }
+}

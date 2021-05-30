@@ -87,7 +87,7 @@ html {
 .pricing-plan 
 
 .pricing-features {
-  color: #016FF9;
+  color: #34495eff;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 50px 0 25px;
@@ -105,7 +105,7 @@ html {
 }
 
 .pricing-price {
-  color: #016FF9;
+  color: #34495eff;
   display: block;
   font-size: 32px;
   font-weight: 700;
