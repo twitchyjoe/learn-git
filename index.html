@@ -2,12 +2,11 @@
 <html lang="en">
 
 
-
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piano With Dennis | Live Online Lessons</title>
+  <!-- Required BS meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Learn piano quickly and effectivly with online one on one lessons.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type="text/css" href="arrow.css" />
@@ -15,6 +14,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="ToDoList1.css">
   <link rel="stylesheet" href="pricingTable.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   
@@ -24,6 +25,13 @@
 </head>
 
 <body>
+
+    <!-- Optional Bootstrap JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
   <div class="wrapper">
     
@@ -55,61 +63,89 @@
         
         
 
-        <div class ="landingDiv1 topGap">
+        <div class ="row landingDiv1 topGap justify-content-center align-items-center">
           
             
-          <div class="block"></div>
-          <div class ="uTubeVid1 block">
+          <div class="col sm-6 md-6 lg-6">
+            <div class ="uTubeVid1">
             <video width="100%" height="100%" controls
             src="/Content/Jazz session 9-29-20.mp4">
             </video>
+            </div>
           </div>
+          <div class="col fadedB">Column1</div>
 
           <div class ="welcome-text">
         
             <h1></h1>
     
-          </div>
-          
-            
-          <div class="verticalB">
-            <div class="text"> Book Now
-            </div>
-          </div>
-
-          <div id="scrollSec" class="scrollDown">
-            <div class="mousebox">
-              <a class="mouseA" href="#ConvSec">
-                <div class="mouse1">
-                  <div class="mouseW"></div>
-                </div>
-                <h4></h4>
-              </a>
-              
-            </div>
-          </div>
-               
+          </div>  
 
         </div>
+
+        <div class="row justify-content-center align-items-center Sec1Btn">
+          <a href="#/" class="button1">Book Now</a>
+        </div>
+
+        <div id="scrollSec" class="scrollDown">
+          <div class="mousebox">
+            <a class="mouseA" href="#ConvSec">
+              <div class="mouse1">
+                <div class="mouseW"></div>
+              </div>
+              <h4></h4>
+            </a>
+            
+          </div>
+        </div>
+
+
       </article>
 
+      <!-- Convienence Section-->
       <article>
-        <section id="ConvSec">
-          <div class ="Convienence">
         
-            <h2>Convienence and Efficiency</h2>
-            <section class="Paragraphs">
-              <p>I belive learning piano should be fun without sacrificing convience. Up until recently having a personal piano instructor required spending countless time in traffic rushing to make your in-person lessons, often times missing out on precious minutes you had hopped to spend with your instructor. I bring a fun and efficient aproach to learning piano, utilizing elements of sightreading, improvising, and theory to have you playing songs you dreamed of within no time.</p>
+        <section id="ConvSec">
+          <div class="row">
 
-              <a href="#/" class="button1">Get Started</a>
+            <div class="col-sm-12 col-md-6 order-md-1">
+                
 
-            </section>
-          
+
+
+            </div>
+
+
+
+            <div class="col-sm-12 col-md-6 order-md-2">
+              <div class ="ConvienenceR">
+                    
+                <h2>Convienence and Efficiency</h2>
+                <section class="Paragraphs">
+                  <p>I belive learning piano should be fun without sacrificing convience. Up until recently having a personal piano instructor required spending countless time in traffic rushing to make your in-person lessons, often times missing out on precious minutes you had hopped to spend with your instructor. I bring a fun and efficient aproach to learning piano, utilizing elements of sightreading, improvising, and theory to have you playing songs you dreamed of within no time.</p>
+  
+                  <a href="#/" class="button1">Get Started</a>
+  
+                </section>
+                            
+              </div>
+
+
+
+            </div>
             
-      
+        
+
+
+
             
-      
+
+
+
+
+
           </div>
+          
         </section>  
       </article>
   
@@ -146,7 +182,7 @@
 
               
 
-              
+            
 
 
               
