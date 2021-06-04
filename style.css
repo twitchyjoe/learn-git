@@ -572,7 +572,7 @@ a.button2{
   background-color: khaki;
 	background: linear-gradient(45deg, #fafafa, #a3a3a3, #657377,#3f585f, #435b75, rgb(66, 93, 121), 
 		rgb(170, 196, 221), rgb(159, 175, 190),rgb(191, 208, 224), #a3a3a3);
-	
+	position: relative;
 
 	z-index: -1;
 	animation: steam 60s linear infinite;
