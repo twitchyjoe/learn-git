@@ -518,7 +518,22 @@ a.button2{
 
 
 
+    .fadedB {
 
+    background-color: khaki;
+    background: linear-gradient(45deg, #fafafa, #a3a3a3, #657377,#3f585f, #435b75, rgb(66, 93, 121), 
+		rgb(170, 196, 221), rgb(159, 175, 190),rgb(191, 208, 224), #a3a3a3);
+	  
+	  width: 100%;
+	  height: 100%;
+	
+
+	  
+	  animation: steam 60s linear infinite;  
+
+
+
+    }
 
 
     
@@ -553,47 +568,5 @@ a.button2{
 
 
 
-
-/*Animated Border*/
-
-.fadedB {
-	/*position: relative;*/
-  /*margin: 300px auto 0;*/
-  /*margin-top: -10em;*/
-	/*width: 500px;*/
-	/*height: 250px;*/
-  /*background: linear-gradient(0deg, #000, #272727);*/
-  z-index: 1;
-}
-
-.fadedB:before, .fadedB:after {
-	
-	
-  background-color: khaki;
-	background: linear-gradient(45deg, #fafafa, #a3a3a3, #657377,#3f585f, #435b75, rgb(66, 93, 121), 
-		rgb(170, 196, 221), rgb(159, 175, 190),rgb(191, 208, 224), #a3a3a3);
-	position: relative;
-
-	z-index: -1;
-	animation: steam 60s linear infinite;
-}
-
-@keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
-}
-
-.fadedB:after {
-	filter: blur(30px);
-}
-
-/*End Gradient*/
 
 
