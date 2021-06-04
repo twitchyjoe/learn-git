@@ -1,167 +1,46 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 @import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Zilla+Slab:300,400);
-.fframe {
+.gradient-border {
+  margin: 5em;
+  --border-width: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Lato, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  background: #222;
+  border-radius: var(--border-width);
+}
+
+.gradient-border::after {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
-  -webkit-box-shadow: 4px 8px 16px 0 #364e64;
-          box-shadow: 4px 8px 16px 0 #364e64;
-  overflow: hidden;
-  color: #333;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*
-	http://colorzilla.com/gradient-editor */
-  background: #fda231;
-  background: linear-gradient(45deg, #fda231 0%, #fbb731 60%, #fdca31 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fda231', endColorstr='#fdca31',GradientType=1 );
-}
-
-.ccenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.todo-cmp {
-  background: #ffffff;
-  padding: 10px 30px;
-  border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 14px rgba(17, 17, 17, 0.192);
-          box-shadow: 2px 2px 14px rgba(17, 17, 17, 0.192);
-  width: 15em;
-  margin-bottom: 2em;
-  float: left;
-}
-
-.todo-cmp__header {
-  text-align: center;
-  padding: 10px 0;
-  border-bottom: 1px solid lightgray;
-}
-
-.todo-cmp__header h6 {
-  font-family: 'fredericka the great', cursive;
-  color: #364e64;
-  font-size: 2.5em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  line-height: 0em;
-  font-weight: 300;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-}
-
-.todo-cmp__header h7 {
-  font-family: robotoThin;
-  color: #364e64;
-  font-size: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  line-height: 0em;
-  font-weight: bold;
-  margin-bottom: 1.5em;
-}
-
-.todo-cmp__list {
-  list-style: none;
-  padding: 0em;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  display: inline-block;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  font-weight: 600;
-  color: #364e64;
-}
-
-.todo-cmp__list li {
-  padding: 10px 0 15px;
-  margin: 0;
-  text-align: left;
-  width: 100%;
-}
-
-.todo-cmp__list li label {
-  cursor: pointer;
-  font-size: 0.82rem;
-  width: 40%;
-  display: absolute;
-  position: center;
-}
-
-.todo-cmp__list li label input {
-  float: left;
-  opacity: 0;
-}
-
-.todo-cmp__list li label span {
-  position: relative;
-  display: block;
-  -webkit-transition: all 550ms ease-in-out;
-  transition: all 550ms ease-in-out;
-}
-
-.todo-cmp__list li label input + span::after {
   content: "";
-  display: block;
-  border: 1px solid #343534;
-  border-radius: 13px;
-  height: 13px;
-  width: 13px;
-  position: absolute;
-  right: 0;
-  top: 1px;
-  z-index: 10;
-  -webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  /* https://matthewlein.com/tools/ceaser */
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: 1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(65deg, #ebe2e2, #a3a3a3, #657377, #3f585f, #435b75, #425d79, #aac4dd, #9fafbe, #bfd0e0, #e2d7d7);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  -webkit-animation: moveGradient 30s alternate infinite;
+          animation: moveGradient 30s alternate infinite;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
 }
 
-.todo-cmp__list li label input + span::before {
-  content: "✔";
-  display: block;
-  font-size: 22px;
-  height: 13px;
-  width: 13px;
-  position: absolute;
-  right: 2px;
-  top: -8px;
-  z-index: 10;
-  opacity: 0;
+@-webkit-keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
-.todo-cmp__list li label input:checked + span {
-  color: #82baee;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-}
-
-.todo-cmp__list li label input:checked + span::after {
-  opacity: 0;
-  height: 17px;
-  width: 17px;
-  top: -2px;
-  right: -2px;
-}
-
-.todo-cmp__list li label input:checked + span::before {
-  opacity: 1;
-  -webkit-transition: all 550ms ease-in-out;
-  transition: all 550ms ease-in-out;
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 /*# sourceMappingURL=ToDoList1.css.map */

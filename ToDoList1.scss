@@ -7,277 +7,62 @@
 @import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Zilla+Slab:300,400);
 
 // use only the available space inside the 400x400 frame
-.fframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
-	box-shadow: 4px 8px 16px 0 rgb(54, 78, 100);
-	overflow: hidden;
-  color: #333;
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	
-	
-	/*
-	http://colorzilla.com/gradient-editor */
-background: rgb(253,162,49);
-background: -moz-linear-gradient(45deg, rgba(253,162,49,1) 0%, rgba(251,183,49,1) 60%, rgba(253,202,49,1) 100%);
-background: -webkit-linear-gradient(45deg, rgba(253,162,49,1) 0%,rgba(251,183,49,1) 60%,rgba(253,202,49,1) 100%);
-background: linear-gradient(45deg, rgba(253,162,49,1) 0%,rgba(251,183,49,1) 60%,rgba(253,202,49,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fda231', endColorstr='#fdca31',GradientType=1 ); 
-}
 
-.ccenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
 
-.todo-cmp {
-	background: #ffffff;
-	padding: 10px 30px;
-	border-radius: 5px;
-	box-shadow: 2px 2px 14px rgba(17, 17, 17, 0.192);
-  width: 15em;
-  margin-bottom: 2em;
-  float: left;
+
+
+
+
+
+
+
+
+
+.gradient-border {
+  margin: 5em;
+  --border-width: 2px;
+  display: flex;
   
   
-  &__header {
-		text-align: center;
-		padding: 10px 0;
-    border-bottom: 1px solid rgb(211, 211, 211);
-    h6 {
-      font-family:'fredericka the great', cursive;
-      color:rgb(54, 78, 100);
-      font-size: 2.5em;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      line-height: 0em;
-      font-weight: 300;
-      margin-bottom: 0.5em;
-      margin-top: 0.5em;
-    }
-
-    h7 {
-      font-family: robotoThin;
-      color:rgb(54, 78, 100);
-      font-size: 0.5em;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      line-height: 0em;
-      font-weight: bold;
-      margin-bottom: 1.5em;
-
-    }
-
-  }
-	
-	&__list {
-		list-style: none;
-    padding: 0em;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: inline-block;
-    align-content: center;
-    font-weight: 600;
-    color:rgb(54, 78, 100);
-		
-		li {
-			padding: 10px 0 15px;
-			margin: 0;
-			text-align: left;
-			width: 100%;
-			
-			label {
-				cursor: pointer;
-				font-size: 0.82rem;
-				width: 40%;
-        display: absolute;
-        position: center;
-				
-				
-				input {
-					float: left;
-					opacity: 0;
-				}
-				
-				span {
-					position: relative;
-					display:block;
-					transition: all 550ms ease-in-out;
-				}
-				
-				
-				input + span::after {
-						content: "";
-						display: block;
-						border: 1px solid #343534;
-						border-radius: 13px;
-						height: 13px;
-						width: 13px;
-						position: absolute;
-						right: 0;
-						top: 1px;
-						z-index: 10;
-					
-					 transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-					 transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
-					/* https://matthewlein.com/tools/ceaser */
-				}
-				
-				input + span::before {
-						content: "✔";
-						display: block;
-						font-size: 22px;
-						height: 13px;
-						width: 13px;
-						position: absolute;
-						right: 2px;
-						top: -8px;
-						z-index: 10;
-						opacity: 0;
-				}
-				
-				input:checked + span {
-					color: rgb(130, 186, 238);
-					transition: all 200ms ease-in-out;
-				}
-				
-				input:checked + span::after {
-						opacity: 0;
-					 	height: 17px;
-					 	width: 17px;
-					  top: -2px;
-					  right: -2px;
-				}
-				
-				input:checked + span::before {
-						opacity: 1;
-					 transition: all 550ms ease-in-out;
-				}
-			}
-		}
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.modal {
-  background: dodgerblue;
-  height: 1px;
-  overflow: hidden;
-  position: fixed;
-    top: 50%;
-    left: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.5s ease 0.5s, 
-              height 0.5s ease;
-  width: 0;
-}
-
-.content {
-  color: transparent;
-  font-family: 'Consolas', arial, sans-serif;
-  font-size: 2em;
-  position: absolute;
-    top: 50%;
-  text-align: center;
-  transform: translate3d(0,-50%,0);
-  transition: color 0.5s ease;
-  width: 100%;
-}
-
-label {
-  color: dodgerblue;
-  cursor: pointer;
-  font-family: 'Consolas', arial, sans-serif;
-  font-size: 2em;
-  position: fixed;
-    left: 50%;
-    top: 50%;
+  font-family: Lato, sans-serif;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  transform: translate(-50%, -50%);
-  transition: color 0.5s ease 0.5s;
-}
+  color: white;
+  background: #222;
+  border-radius: var(--border-width);
 
-input {
-  cursor: pointer;
-  height: 0;
-  opacity: 0;
-  width: 0;
-  
-  &:focus {
-    outline: none;
-  } 
-}
-
-input:checked {
-  height: 40px;
-  opacity: 1;
-  position: fixed;
-    right: 20px;
-    top: 20px;
-    z-index: 1;
- -webkit-appearance: none;
-  width: 40px;
-  
-  &::after,
-  &:before {
-    border-top: 1px solid #FFF;
-    content: '';
-    display: block;
-    position: absolute;
-      top: 50%;
-    transform: rotate(45deg);
-    width: 100%;
-  }
-  
   &::after {
-    transform: rotate(-45deg);
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: 1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      65deg, 
+      #ebe2e2, 
+      #a3a3a3, 
+      #657377,
+      #3f585f, 
+      #435b75, 
+      rgb(66, 93, 121), 
+		  rgb(170, 196, 221), 
+      rgb(159, 175, 190),
+      rgb(191, 208, 224), 
+      #e2d7d7);
+    
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 30s alternate infinite;
+
+    filter:blur(50px)
   }
 }
 
-input:checked + label {
-  color: #FFF;
-  transition: color 0.5s ease,
-}
-
-input:checked ~ .modal {
-  height: 100%;
-  width: 100%;
-  transition: width 0.5s ease, 
-              height 0.5s ease 0.5s;
-  .content {
-    color: #FFF;
-    transition: color 0.5s ease 0.5s;
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
   }
 }

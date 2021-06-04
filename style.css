@@ -61,16 +61,26 @@ article {
 }
 
 section {
-  background-color: rgba(0, 128, 128, 0.082);
+  background-color: rgba(0, 128, 128, 0);
   margin-left: auto;
   margin-right: auto;
 }
 
-section .Paragraphs {
-display: inline-block;
-width: 25em;
+#TailSec {
+  padding-top: 3em;
+  padding-bottom: 3em;
 
 }
+
+section .Paragraphs {
+display: inline-block;
+}
+
+.lh-35 { 
+line-height: 35px; 
+}
+
+
 
 section .toDo {
 
@@ -125,12 +135,11 @@ height: 30em;
 .uTubeVid1 {
   max-width: 50em;
   min-width: 20em;
-  height: fit-content;
-  position: relative;
   background-color: rgba(31, 31, 31, 0);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.2em;
+  padding-bottom: 1.25em;
+  padding-top: 0.05em;
+  
+  
   
   
   
@@ -163,12 +172,18 @@ height: 30em;
   z-index: 12;
 }
 
-.Convienence {
+#ConvSec {
+  background-color: rgba(31, 31, 31, 0.041);
+
+}
+
+
+.ConvienenceL {
   margin-top: 5em;
   margin-bottom: 5em;
   padding-top: 3em;
   padding-bottom: 4em;
-  background-color: rgba(31, 31, 31, 0.041);
+  
   position: relative;
   text-align: center;
   align-content: center;
@@ -182,7 +197,7 @@ height: 30em;
   margin-bottom: 5em;
   padding-top: 3em;
   padding-bottom: 4em;
-  background-color: rgba(31, 31, 31, 0.041);
+ 
   position: relative;
   text-align: center;
   align-content: center;
@@ -307,13 +322,16 @@ height: 30em;
 
 h1 {
   color: rgb(255, 255, 255);
-  font-size: 4.0em;
+  font-size: 3.0em;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   text-align: center;
 }
 
+.landing-text {
+  font-size: 10.0em;
+}
 
 h2 {
   color: black;
@@ -463,14 +481,15 @@ a.button1{
 a.button2{
   display:inline-block;
   padding:0.35em 1.2em;
-  border:0.1em solid #34495eff;
+  border:0.1em solid rgb(255, 255, 255);
   margin:0 .3em 0.3em 0;
   border-radius:0.22em;
   box-sizing: border-box;
   text-decoration:none;
   font-family:'Roboto',sans-serif;
   font-weight:300;
-  color:#34495eff;
+  font-size: 1.5rem;
+  color:rgb(255, 255, 255);
   text-align:center;
   transition: all 0.2s;
   margin-top: 1.5em;
@@ -478,6 +497,7 @@ a.button2{
   a.button2:hover{
   color:rgb(255, 255, 255);
   background-color:#34495eff;
+  border:0.1em solid #34495eff;
   }
   @media all and (max-width:30em){
    a.button2{
@@ -518,25 +538,13 @@ a.button2{
 
 
 
-    .fadedB {
-
-    background-color: khaki;
-    background: linear-gradient(45deg, #fafafa, #a3a3a3, #657377,#3f585f, #435b75, rgb(66, 93, 121), 
-		rgb(170, 196, 221), rgb(159, 175, 190),rgb(191, 208, 224), #a3a3a3);
-	  
-	  width: 100%;
-	  height: 100%;
-	
-
-	  
-	  animation: steam 60s linear infinite;  
-
-
-
-    }
-
-
     
+
+
+
+
+  
+
 
 
 
